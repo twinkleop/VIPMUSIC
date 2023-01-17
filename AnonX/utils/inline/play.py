@@ -63,7 +63,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
     else:
         bar = " 🎸🎸🎸🎸🎸 "
-
     buttons = [
         [
             InlineKeyboardButton(
