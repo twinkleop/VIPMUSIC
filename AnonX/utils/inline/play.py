@@ -110,8 +110,9 @@ def telegram_markup_timer(_, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
-    if 0 < anon <= 10:
-        anon < 10:
+    if 0 < anon <= 5:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 5 < anon < 10:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
     elif 10 <= anon < 15:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
@@ -143,7 +144,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
     elif 80 <= anon < 85:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
-   elif 85 <= anon < 90:
+    elif 85 <= anon < 90:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
     elif 90 <= anon < 92:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
