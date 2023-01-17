@@ -15,24 +15,52 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
-    if 0 < anon <= 10:
+    if 0 < anon <= 5:
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 10 < anon < 20:
+    elif 5 < anon < 10:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 20 <= anon < 30:
+    elif 10 <= anon < 15:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
-    elif 30 <= anon < 40:
+    elif 15 <= anon < 20:
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 40 <= anon < 50:
+    elif 20 <= anon < 25:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 50 <= anon < 60:
+    elif 25 <= anon < 30:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
-    elif 60 <= anon < 70:
+    elif 30 <= anon < 35:
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 70 <= anon < 80:
+    elif 35 <= anon < 40:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 80 <= anon < 95:
+    elif 40 <= anon < 45:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 45 < anon < 50:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 50 <= anon < 55:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 55 <= anon < 60:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 60 <= anon < 65:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 65 <= anon < 70:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 70 <= anon < 75:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 75 <= anon < 80:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 80 <= anon < 85:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+   elif 85 < anon < 90:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 90 <= anon < 92:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 92 <= anon < 94:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 94 <= anon < 95:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 95 <= anon < 96:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 96 <= anon < 97:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
     else:
         bar = " 🎸🎸🎸🎸🎸 "
 
@@ -84,27 +112,60 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 10 < anon < 20:
+        anon < 10:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 20 <= anon < 30:
+    elif 10 <= anon < 15:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
-    elif 30 <= anon < 40:
+    elif 15 <= anon < 20:
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 40 <= anon < 50:
+    elif 20 <= anon < 25:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 50 <= anon < 60:
+    elif 25 <= anon < 30:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
-    elif 60 <= anon < 70:
+    elif 30 <= anon < 35:
         bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
-    elif 70 <= anon < 80:
+    elif 35 <= anon < 40:
         bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
-    elif 80 <= anon < 95:
+    elif 40 <= anon < 45:
         bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 45 < anon < 50:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 50 <= anon < 55:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 55 <= anon < 60:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 60 <= anon < 65:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 65 <= anon < 70:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 70 <= anon < 75:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 75 <= anon < 80:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 80 <= anon < 85:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+   elif 85 < anon < 90:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 90 <= anon < 92:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 92 <= anon < 94:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
+    elif 94 <= anon < 95:
+        bar = " 💥@𝚃𝙶_𝙵𝚁𝙸𝙴𝙽𝙳𝚂𝚂💥 "
+    elif 95 <= anon < 96:
+        bar = " 🔥@𝚅𝙸𝙿_𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂🔥 "
+    elif 96 <= anon < 97:
+        bar = " 🥀@𝚃𝙷𝙴_𝚅𝙸𝙿_𝙱𝙾𝚈🥀 "
     else:
         bar = " 🎸🎸🎸🎸🎸 "
 
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+            ),
+        ],
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
@@ -128,8 +189,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}"
+            ),
         ],
     ]
     return buttons
@@ -139,14 +205,23 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
@@ -157,8 +232,13 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}"
+            ),
         ],
     ]
     return buttons
@@ -168,6 +248,18 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/{app.username}?startgroup=true",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
@@ -183,8 +275,13 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}"
+            ),
         ],
     ]
     return buttons
@@ -207,9 +304,13 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
-            )
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}"
+            ),
         ],
     ]
     return buttons
@@ -229,10 +330,6 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
             InlineKeyboardButton(
                 text=_["S_B_3"],
                 url=f"{config.SUPPORT_GROUP}",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ]
     ]
@@ -256,10 +353,6 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["S_B_3"],
                 url=f"{config.SUPPORT_GROUP}",
-            ),
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
     ]
@@ -290,8 +383,8 @@ def slider_markup(
                 callback_data=f"slider B|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {query}|{user_id}",
+                text=_["S_B_3"],
+                url=f"{config.SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
                 text="▷",
@@ -327,9 +420,6 @@ def queue_markup(_, videoid, chat_id):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
@@ -338,9 +428,13 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
+                text=_["PL_B_2"],
+                callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}"
+            ),
         ],
     ]
     return buttons
- 
